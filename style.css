@@ -1,0 +1,13 @@
+table, tr, td, th {
+    border: 1px solid green;
+    border-collapse:collapse;
+    padding:10px;
+  }
+  th {
+    color:white;
+    background-color:green;
+    border: 1px solid white;
+  }
+  td:nth-child(3) {
+    text-align:center;
+  }
