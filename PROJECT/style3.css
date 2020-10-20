@@ -16,3 +16,38 @@ body {
     color: #fff;
     box-shadow: 0 0 20px;
 }
+.input-box {
+    margin: 31px auto;
+    width: 80%;
+    border-bottom: 1px solid #fff;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.input-box input{
+    width: 90%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+::placeholder{
+    color: #ccc;
+}
+.fa{
+    margin-right: 10px ;
+}
+#hide1{
+    display: none;
+}
+.login-btn{
+    margin: 40px auto 20px;
+    width: 80%;
+    display: block;
+    outline: none;
+    padding:  10px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
