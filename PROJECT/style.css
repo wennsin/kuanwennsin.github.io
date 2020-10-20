@@ -40,6 +40,9 @@ h1{
 .fa{
     margin-right: 10px ;
 }
+.eye{
+    position: absolute;
+}
 #hide1{
     display: none;
 }
