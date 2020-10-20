@@ -3,7 +3,7 @@
     padding: 0;
 }
 body {
-    background-image: url(https://i.postimg.cc/xTVqdRHc/logo.png);
+    background-color: plum;
     background-size: cover;
     background-position: center;
     font-family: sans-serif;
@@ -38,7 +38,7 @@ h1{
     color: #ccc;
 }
 .fa{
-    margin-right: 10px ;
+    margin-right: 10px;
 }
 .eye{
     position: absolute;
