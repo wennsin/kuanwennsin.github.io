@@ -9,7 +9,6 @@ window.addEventListener("load",function(){
         .then(json => { //we can put json to anyname, we can put as wenn and the below json.bookings must change to wenn.bookings
         // Do something with the data
 
-        console.log(json.bookings);
         var bookings = document.getElementById("booking-list");
         var bookingIds = [];
 
