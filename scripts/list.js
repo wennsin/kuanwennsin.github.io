@@ -27,7 +27,7 @@ window.addEventListener("load",function(){
             row.insertCell(2).innerHTML = gEmail;
             row.insertCell(3).innerHTML = gPax;
             row.insertCell(4).innerHTML = ""; //remarks
-            row.insertCell(5).innerHTML = "<button id='" + buttonId + "'>Delete</button><br/>";
+            row.insertCell(5).innerHTML = "<button id='" + buttonId + "' class='btn btn-danger'>Delete</button><br/>";
 
             bookingIds.push(buttonId);
         }
