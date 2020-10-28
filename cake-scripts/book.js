@@ -5,7 +5,8 @@ function BookNow(guestName,guestEmail,guestPax,guestRemarks){
         //we set the 3 options on our own, the others we copy from the sheety/ post and enable it//
         name:guestName,
         email:guestEmail,
-        pax:guestPax
+        pax:guestPax,
+        remarks:guestRemarks
       }
     }
     fetch(url, {
@@ -20,8 +21,7 @@ function BookNow(guestName,guestEmail,guestPax,guestRemarks){
     .then(json => {
       // Do something with object
       console.log(json.booking);
-          document.getElementById("bookMsg").innerHTML = json.booking.name + " successfully added!";
-          GetBookings();
+          alert(json.booking.name + " successfully added!");
         });
   }
 
@@ -34,5 +34,5 @@ function BookNow(guestName,guestEmail,guestPax,guestRemarks){
 
     BookNow(name, email, pax, remarks);
   });
-
+  
 });
