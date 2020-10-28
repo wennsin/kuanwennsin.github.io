@@ -1,18 +1,18 @@
-function BookNow(guestName,guestEmail,guestPax,guestRemarks){
+function BookNow(guestName, guestEmail, guestPax, guestRemarks) {
     let url = 'https://api.sheety.co/970bfc602945d3f02c81b7806bcae1a2/bookingApp/bookings';
     let body = {
       booking: {
-        name:guestName,
-        email:guestEmail,
-        pax:guestPax,
-        remarks:guestRemarks
+        name: guestName,
+        email: guestEmail,
+        pax: guestPax,
+        remarks: guestRemarks
       }
     }
     fetch(url, {
       method: 'POST',
       body: JSON.stringify(body),
-      headers:{
-        "Content-Type":"application/json"
+      headers: {
+        "Content-Type": "application/json"
       }
     })
     .then((response) => response.json())
