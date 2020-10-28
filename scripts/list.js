@@ -40,3 +40,19 @@ window.addEventListener("load",function(){
         }
         });
     }
+
+    function DeleteBooking(id){
+
+        if(confirm("Are you sure you want to delete?")) {
+            let url = 'https://api.sheety.co/970bfc602945d3f02c81b7806bcae1a2/bookingApp/bookings/' + id;
+            fetch(url, {
+              method: 'DELETE',
+            })
+            .then((response) => { 
+              GetBookings();
+            });
+        } else {
+            alert("Delete cancelled");
+        }
+
+      }
