@@ -52,7 +52,7 @@ window.addEventListener("load",function(){
               GetBookings();
             });
         } else {
-            alert("Delete cancelled";)
+            alert("Delete cancelled");
         }
 
       }
