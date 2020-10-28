@@ -2,7 +2,6 @@ function BookNow(guestName,guestEmail,guestPax,guestRemarks){
     let url = 'https://api.sheety.co/970bfc602945d3f02c81b7806bcae1a2/bookingApp/bookings';
     let body = {
       booking: {
-        //we set the 3 options on our own, the others we copy from the sheety/ post and enable it//
         name:guestName,
         email:guestEmail,
         pax:guestPax,
@@ -12,7 +11,6 @@ function BookNow(guestName,guestEmail,guestPax,guestRemarks){
     fetch(url, {
       method: 'POST',
       body: JSON.stringify(body),
-      //we add headers on our own//
       headers:{
         "Content-Type":"application/json"
       }
