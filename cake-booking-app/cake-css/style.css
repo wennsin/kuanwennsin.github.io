@@ -103,28 +103,7 @@ html,body{
   color: white;
 }
 
-
-
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600|Noto+Sans|Open+Sans:400,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-body{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  font-family: sans-serif;
-  justify-content: center;
-  background: url(bg.jpg);
-  background-size: cover;
-  background-position: center;
-}
 .container2{
- 
   position: relative;
   width: 400px;
   background: white;
