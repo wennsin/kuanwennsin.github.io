@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  color: #d9d9d9;
+  color: white;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
@@ -13,6 +13,9 @@ html,body{
   text-align: center;
   background: #f2f2f2;
 }
+.container-fluid{
+  color:rebeccapurple;
+}
 .slider{
   max-width: 1100px;
   display: flex;
@@ -20,7 +23,7 @@ html,body{
 .slider .card{
   flex: 1;
   margin: 0 10px;
-  background: #fff;
+  background: white;
 }
 .slider .card .img{
   height: 300px;
@@ -35,39 +38,41 @@ html,body{
   padding: 5px 5px;
 }
 .card .content .title{
-  color: black;
-  margin:30px;
+  padding-left: 50px;
+  color: rebeccapurple;
+  margin:25px 0 ;
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 500;
+  background: white;
+ border: 0.2rem solid;
 }
 .card .content .sub-title{
   font-size: 20px;
-  font-weight: 600;
-  color: #e74c3c;
+  font-weight: 450;
+  color: rebeccapurple;
   line-height: 20px;
 }
 .card .content p{
+  font-size: 20px;
   text-align: justify;
   margin: 20px 0;
-  color: yellow;  
+  color: pink; 
 }
 .card .content .btn{
   display: block;
-  text-align: centre;
+  text-align: left;
   margin: 20px 0;
   
 }
 .card .content .btn button{
-  background: #e74c3c;
-  color: blue;
+  background: rebeccapurple;
+  color: white;
   border: none;
   outline: none;
   font-size: 15px;
-  padding: 5px 50px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.2s;
-  
+  padding: 10px 90px;
+  border-radius: 100px;
+  opacity: 0.9;  
 }
 .card .content .btn button:hover{
   transform: scale(0.9);
@@ -81,10 +86,13 @@ html,body{
  text-align: center;
  text-decoration: none;
  border-radius: 80%; 
+ background: white;
+ margin-left: 10px;
 }
 .fa:hover {
   opacity: 0.9;
 }
+
 .fa-facebook {
   background: #3B5999;
   color: white;
@@ -95,13 +103,211 @@ html,body{
 }
 
 
+.bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+  cursor: pointer;
+}
+  
+	.close:hover {
+		color: #666;
+	}
+
+.bg-img{
+  background: url('bg.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.bg-img:after{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+}
+.content{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%,-50%);
+  background: rgba(255,255,255,0.04);
+  box-shadow: -1px 4px 28px 0px rgba(0,0,0,0.75);
+}
+.content header{
+  color: white;
+  font-size: 33px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: 'Montserrat',sans-serif;
+}
+.field{
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255,255,255,0.94);
+}
+.field span{
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+.field input{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.space{
+  margin-top: 16px;
+}
+.show{
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.pass-key:valid ~ .show{
+  display: block;
+}
+.pass{
+  text-align: left;
+  margin: 10px 0;
+}
+.pass a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins',sans-serif;
+}
+.pass:hover a{
+  text-decoration: underline;
+}
+.field input[type="submit"]{
+  background: #3498db;
+  border: 1px solid #2691d9;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Montserrat',sans-serif;
+}
+.field input[type="submit"]:hover{
+  background: #2691d9;
+}
+.login{
+  color: white;
+  margin: 20px 0;
+  font-family: 'Poppins',sans-serif;
+}
+.links{
+  display: flex;
+  cursor: pointer;
+  color: white;
+  margin: 0 0 20px 0;
+}
+.facebook,.instagram{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  margin-left: 10px;
+}
+.facebook{
+  margin-left: 0;
+  background: #4267B2;
+  border: 1px solid #3e61a8;
+}
+.instagram{
+  background: #E1306C;
+  border: 1px solid #df2060;
+}
+.facebook:hover{
+  background: #3e61a8;
+}
+.instagram:hover{
+  background: #df2060;
+}
+.links i{
+  font-size: 17px;
+}
+i span{
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 16px;
+  font-family: 'Poppins',sans-serif;
+}
+.signup{
+  font-size: 15px;
+  color: white;
+  font-family: 'Poppins',sans-serif;
+}
+.signup a{
+  color: #3498db;
+  text-decoration: none;
+}
+.signup a:hover{
+  text-decoration: underline;
+}
+
+
+
+
 
 
 footer {
   display: block;
-  text-align: center;
-  padding: 3px;
-  background-color: DarkSalmon;
+  text-align: justify;
+  padding: 20px;
+  background-color: pink;
 }
 .main-content{
   display: flex;
@@ -127,11 +333,12 @@ footer {
 }
 .left .content .social a{
   padding: 0 2px;
+  color: white;
 }
 .left .content .social a span{
   height: 40px;
   width: 40px;
-  background: #1a1a1a;
+  background:rebeccapurple;
   line-height: 40px;
   text-align: center;
   font-size: 18px;
@@ -139,11 +346,11 @@ footer {
   transition: 0.3s;
 }
 .left .content .social a span:hover{
-  background: white;
+  background: black;
 }
 .center .content .fas{
   font-size: 1.4375rem;
-  background: red;
+  background: rebeccapurple;
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -151,9 +358,10 @@ footer {
   border-radius: 50%;
   transition: 0.3s;
   cursor: pointer;
+  color: white;
 }
 .center .content .fas:hover{
-  background: #f12020;
+  background: black;
 }
 .center .content .text{
   font-size: 1.0625rem;
@@ -166,7 +374,7 @@ footer {
 .right form .text{
   font-size: 1.0625rem;
   margin-bottom: 2px;
-  color: blue;
+  color: black;
 }
 .right form .msg{
   margin-top: 10px;
@@ -174,13 +382,12 @@ footer {
 .right form input, .right form .msgForm{
   width: 100%;
   font-size: 1.0625rem;
-  background: orange;
   padding-left: 10px;
   border: 1px solid #222222;
 }
 .right form input:focus,
 .right form .msgForm:focus{
-  outline-color: green;
+  outline-color: black;
 }
 .right form input{
   height: 35px;
@@ -193,40 +400,16 @@ footer {
   width: 100%;
   border: none;
   outline: none;
-  background: #f12020;
+  background: rebeccapurple;
   font-size: 1.0625rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: .3s;
+  font-weight: 600;
+  padding: 5px 50px;
+  border-radius: 200px;
+  color: white;
 }
 .right form .btn button:hover{
-  background: #000;
+  background: black;
 }
-.bottom center{
-  padding: 5px;
-  font-size: 0.9375rem;
-  background: green;
-}
-.bottom center span{
-  color: #656565;
-}
-.bottom center a{
-  color: #f12020;
-  text-decoration: none;
-}
-.bottom center a:hover{
-  text-decoration: underline;
-}
-@media screen and (max-width: 900px) {
-  footer{
-    position: relative;
-    bottom: 0px;
-  }
- .main-content{
-    flex-wrap: wrap;
-    flex-direction: column;
-  }
-  .main-content .box{
-    margin: 5px 0;
-  }
-}
+
+
+
