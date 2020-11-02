@@ -28,7 +28,7 @@ var app4 = new Vue ({
             {text: "Learn HTML - Done"},
             {text: "Learn CSS - Done"},
             {text: "Learn JS - Done"},
-            {text: "Learn Vue - In Progress"},
+            {text: "Learn Vue - In Progress"}
         ]
     }
 });
