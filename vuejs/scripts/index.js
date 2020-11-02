@@ -38,7 +38,7 @@ var app5 = new Vue ({
     data : {
         message : "Wenn"
     },
-    methods: {
+    methods : {
         reverseMessage: function () {
             this.message = this.message.split('').reverse().join('')
         }
