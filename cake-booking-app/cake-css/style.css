@@ -14,10 +14,40 @@ html,body{
   text-align: center;
   background: #f2f2f2;
 }
+
 .container-fluid{
-  color:rebeccapurple;
+  background-color : orange;
 }
+
+.navbar-brand {
+  background-color : blue;
+}
+
+.navbar-nav {
+  background-color : rebeccapurple;
+}
+
+.row .col .jumbotron {
+  margin:20px 0;
+  background-color : pink;
+}
+
+.display-4 {
+  background-color : yellow;
+}
+
+.lead {
+  background-color : black;
+}
+
+.my-4 {
+  background-color : green;
+}
+
+
+
 .slider{
+  margin :30px; 
   max-width: 1100px;
   display: flex;
 }
@@ -31,32 +61,24 @@ html,body{
   width: 100%;
 }
 .slider .card .img img{
-  height: 380px;
+  height: 400px;
   width: 100%;
   object-fit: cover;
 }
 .slider .card .content{
-  padding: 5px 5px;
-}
-.card .content .title{
-  padding-left: 50px;
-  color: rebeccapurple;
-  margin:25px 0 ;
-  font-size: 25px;
-  font-weight: 500;
-  background: white;
- border: 0.2rem solid;
+  padding: 40px 10px;
 }
 .card .content .sub-title{
+  margin : 75px 0 0;
   font-size: 20px;
-  font-weight: 450;
+  font-weight: 600;
   color: rebeccapurple;
   line-height: 20px;
 }
 .card .content p{
+  margin : 10px;
   font-size: 20px;
   text-align: justify;
-  margin: 20px 0;
   color: pink; 
 }
 .card .content .btn{
@@ -75,35 +97,13 @@ html,body{
   border-radius: 100px;
   opacity: 0.9;  
 }
+
 .card .content .btn button:hover{
   transform: scale(0.9);
 }
 
-.fa {
- margin: .9px;
- padding: 17px;
- font-size: 50px;
- width: 52px;
- text-align: center;
- text-decoration: none;
- border-radius: 80%; 
- background: white;
- margin-left: 10px;
-}
-.fa:hover {
-  opacity: 0.9;
-}
-
-.fa-facebook {
-  background: #3B5999;
-  color: white;
-}
-.fa-instagram {
-  background: #e1306c;
-  color: white;
-}
-
 footer {
+  margin : 40px 0 0;
   display: block;
   text-align: justify;
   padding: 20px;
